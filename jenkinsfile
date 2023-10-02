@@ -22,7 +22,7 @@ pipeline {
  stage('Deploy') {
             steps {
                 echo "deploy"
-                sh 'java -jar $WORKSPACE'/target/jenkins_3_demo-0.0.1-SNAPSHOT.jar'
+                sh "java -jar $WORKSPACE'/target/jenkins_3_demo-0.0.1-SNAPSHOT.jar'"
             }
         }
        
