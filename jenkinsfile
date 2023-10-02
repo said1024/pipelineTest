@@ -7,6 +7,12 @@ pipeline {
                 git 'https://github.com/said1024/jenkins3.git'
             }
         }
+ stage('maven build') { 
+            steps {
+               echo "build"
+                sh "clean package"
+            }
+        }
        
     }
 }
