@@ -1,0 +1,22 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                echo "from github"
+                echo "Build comple" 
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo "Test comleted "
+                sh "date"
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo "Deploy copleted"
+            }
+        }
+    }
+}
