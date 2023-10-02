@@ -1,22 +1,12 @@
 pipeline {
     agent any 
     stages {
-        stage('Build') { 
+        stage('git checkout') { 
             steps {
-                echo "from github"
-                echo "Build comple" 
+               echo "cloning"
+                git 'https://github.com/said1024/jenkins3.git'
             }
         }
-        stage('Test') { 
-            steps {
-                echo "Test comleted "
-                sh "date"
-            }
-        }
-        stage('Deploy') { 
-            steps {
-                echo "Deploy copleted"
-            }
-        }
+       
     }
 }
