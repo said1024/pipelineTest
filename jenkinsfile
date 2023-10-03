@@ -4,7 +4,7 @@ pipeline {
         stage('cloning') { 
             steps {
                echo "cloning"
-                git 'https://github.com/Oualitsen/optidial.git'
+                git 'https://github.com/said1024/jenkins3.git'
             }
         }
  stage('maven build') { 
